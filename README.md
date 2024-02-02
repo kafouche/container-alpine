@@ -16,10 +16,10 @@ docker build -t kafouche/alpine:latest .
 The following `code blocks` are only there as **examples**.
 ### Manual
 ```
-docker run --detach \
-    --name alpine \
-    --network bridge \
-    kafouche/alpine:latest
+docker run --detach                   \
+  --name alpine                       \
+  --network bridge                    \
+  kafouche/alpine:latest
 ```
 
 ### Composer
@@ -28,8 +28,8 @@ docker run --detach \
 version: "3"
 
 services:
-    alpine:
-        container_name: "alpine"
-        image: "kafouche/alpine:latest"
-        network_mode: bridge
+  alpine:
+    container_name: "alpine"
+    image: "kafouche/alpine:latest"
+    network_mode: bridge
 ```
