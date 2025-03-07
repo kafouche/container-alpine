@@ -1,7 +1,9 @@
 # Dockerfile: alpine
-# Custom Alpine Base Image
+# Kafouche Alpine Base Image
 
-FROM        alpine:latest
+LABEL       org.opencontainers.image.source https://github.com/kafouche/alpine
+
+FROM        docker.io/library/alpine:3.21
 
 USER        root
 

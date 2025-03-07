@@ -1,35 +1,21 @@
-# Alpine Linux
-
-## Image
-### Environment
-| Parameter | Description                                          |
-|-----------|------------------------------------------------------|
-| `TZ`      | Set container's timezone (*default*: `Europe/Paris`) |
+# Alpine
 
 ## Build
+
+**Docker**
+
 ```
 docker build -t kafouche/alpine:latest .
 ```
 
+**Podman**
 
-## Run
-The following `code blocks` are only there as **examples**.
-### Manual
 ```
-docker run --detach                   \
-  --name alpine                       \
-  --network bridge                    \
-  kafouche/alpine:latest
+podman build -t kafouche/alpine:latest .
 ```
 
-### Composer
-```
----
-version: "3"
+### Environment
 
-services:
-  alpine:
-    container_name: "alpine"
-    image: "kafouche/alpine:latest"
-    network_mode: bridge
-```
+| Parameter | Description                                          |
+|-----------|------------------------------------------------------|
+| `TZ`      | Set container's timezone (*default*: `Europe/Paris`) |
