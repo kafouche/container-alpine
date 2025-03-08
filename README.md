@@ -1,5 +1,11 @@
 # Alpine
 
+## Environment
+
+| Parameter | Description                                          |
+|-----------|------------------------------------------------------|
+| `TZ`      | Set container's timezone (*default*: `Europe/Paris`) |
+
 ## Build
 
 **Docker**
@@ -13,9 +19,3 @@ docker build -t kafouche/alpine:latest .
 ```
 podman build -t kafouche/alpine:latest .
 ```
-
-### Environment
-
-| Parameter | Description                                          |
-|-----------|------------------------------------------------------|
-| `TZ`      | Set container's timezone (*default*: `Europe/Paris`) |
