@@ -3,7 +3,7 @@
 
 LABEL       org.opencontainers.image.source https://github.com/kafouche/alpine
 
-FROM        docker.io/library/alpine:3.21
+FROM        docker.io/library/alpine:3.22
 
 USER        root
 
