@@ -8,14 +8,8 @@
 
 ## Build
 
-**Docker**
-
 ```
-docker build -t kafouche/alpine:latest .
-```
-
-**Podman**
-
-```
-podman build -t kafouche/alpine:latest .
+docker build -t ghcr.io/kafouche/alpine:latest .
+# OR
+podman build -t ghcr.io/kafouche/alpine:latest .
 ```
