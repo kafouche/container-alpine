@@ -1,9 +1,9 @@
-# Containerfile: alpine
+# Dockerfile: alpine
 # Kafouche Alpine Base Image
 
 LABEL       org.opencontainers.image.authors="kafouche"
 LABEL       org.opencontainers.image.base.name="ghcr.io/kafouche/alpine:3.22.0"
-LABEL       org.opencontainers.image.source="https://github.com/kafouche/alpine"
+LABEL       org.opencontainers.image.source="https://github.com/kafouche/docker-alpine"
 LABEL       org.opencontainers.image.title="Alpine Linux"
 LABEL       org.opencontainers.image.version="3.22.0"
 LABEL       image.tags[0]="ghcr.io/kafouche/alpine:3.22"
