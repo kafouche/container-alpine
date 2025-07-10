@@ -10,6 +10,9 @@ LABEL       image.tags[0]="ghcr.io/kafouche/alpine:3.22"
 LABEL       image.tags[1]="ghcr.io/kafouche/alpine:3"
 LABEL       image.tags[2]="ghcr.io/kafouche/alpine:latest"
 
+
+# ------------------------------------------------------------------------------
+
 FROM        scratch
 
 ADD         alpine-minirootfs-3.22.0-x86_64.tar.gz /

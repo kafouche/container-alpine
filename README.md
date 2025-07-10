@@ -1,15 +1,9 @@
-# Alpine
+# Alpine Linux
+
+This is *Kafouche Alpine Linux* base image used to build all others containers.
 
 ## Environment
 
 | Parameter | Description                                          |
 |-----------|------------------------------------------------------|
 | `TZ`      | Set container's timezone (*default*: `Europe/Paris`) |
-
-## Build
-
-```
-docker build -t ghcr.io/kafouche/alpine:latest .
-# OR
-podman build -t ghcr.io/kafouche/alpine:latest .
-```
