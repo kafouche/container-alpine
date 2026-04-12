@@ -1,0 +1,19 @@
+name: Build and Push Image
+on: [ push ]
+
+jobs:
+  build:
+    name: Build and push image
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Build Image
+      id: build-image
+      uses: redhat-actions/buildah-build@v2
+      with:
+        image: my-app
+        tags: latest ${{ github.sha }}
+        containerfiles: |
+          ./Containerfile
